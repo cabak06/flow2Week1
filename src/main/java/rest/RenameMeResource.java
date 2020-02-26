@@ -47,4 +47,14 @@ public class RenameMeResource {
     }
 
  
+   @Path("greet")
+    @POST
+   @Consumes({MediaType.APPLICATION_JSON})
+    @Produces({MediaType.APPLICATION_JSON})
+   public String hello() {
+        return "{\"msg\":\"Hello World\"}";
+    } 
+    
+    
+    
 }
